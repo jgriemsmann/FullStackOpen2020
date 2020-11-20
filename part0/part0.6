@@ -1,0 +1,19 @@
+title Submitting a note (SPA)
+
+user->browser: some text is written into the text field and the submit button is clicked
+
+note over browser:
+the onsubmit event is triggered
+and a new note is created
+and appended to the note list
+of the html document
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+server responses with 201 created
+and a response text
+end note
+
+server-->browser: Status code 201 created {"message":"note created"}
