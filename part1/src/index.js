@@ -4,10 +4,20 @@ import ReactDOM from 'react-dom'
 const Header = (course) => {
   return (
     <h1>{course.course}</h1>
-    )
+  )
 }
 
-const Content = (part) => {
+const Content = (content) => {
+  return (
+    <div>
+      <Part part={content} />
+      <Part part={content} />
+      <Part part={content} />
+    </div>
+  )
+}
+
+const Part = (part) => {
   return (
     <p>
       {part.part} {part.numberOfExercises}
